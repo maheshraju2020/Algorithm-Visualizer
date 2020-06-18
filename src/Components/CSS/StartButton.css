@@ -1,0 +1,32 @@
+.button {
+    width: 100px;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: red;
+    color: white;
+    font-family: Bahnschrift, Arial, sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: rgb(185, 185, 185) 5px 5px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+#start {
+    position: fixed;
+    margin: 480px 815px;
+}
+
+#start:hover {
+    background: darkred;
+    box-shadow: rgb(185, 185, 185) 2px 2px;
+}
+
+#start:active {
+    transform: scale(0.8);
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,8 @@
+#pageHistory {
+    font-family: Bahnschrift, Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 18px;
+    margin-left: 420px;
+    position: fixed;
+    transition: all 500ms;
+}

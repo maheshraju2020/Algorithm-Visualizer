@@ -1,0 +1,45 @@
+#speeddiv {
+    display: none;
+    position: fixed;
+    margin: 5px 1260px;
+    text-align: center;
+}
+
+#speedNum {
+    margin-left: 35px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    background: rgb(243, 174, 237);
+    width: 50px;
+    height: 24px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+    user-select: none;
+}
+
+#speed {
+    position: fixed;
+    align-self: center;
+    margin: -35px -180px;
+    background: linear-gradient(to right, #e04949d0 0%, #e04949d0 42%, #EFEFF1 42%, #EFEFF1 100%);
+    border: solid 1px rgb(0, 0, 0);
+    -webkit-appearance: none;
+    border-radius: 8px;
+    outline: none;
+    height: 10px;
+    width: 150px;
+    transition: all 500ms;
+}
+
+#speed::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    border: solid 2px black;
+    height: 35px;
+    border-radius: 30%;
+    background: #ff1d1d;
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+body {
+    background: #DFFFEA;
+}
+
+#algo_text {
+    font-family: Bahnschrift, Arial, sans-serif;
+    font-size: 70px;
+    margin-top: 50px;
+    padding-top: 50px;
+    text-align: center;
+    user-select: none;
+}
+
+hr {
+    width: 80%;
+    /* left: 40px; */
+    height: 5px;
+    background: black;
+    font-weight: 100px;
+}
+
+#cardsDiv {
+    margin-top: 40px;
+    margin-left: 150px;
+    width: 1100px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,37 @@
+.icon {
+    box-sizing: border-box;
+    width: 52px;
+    height: 52px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2.5px solid black;
+    float: left;
+    margin-left: 12px;
+    background: #C4C4C4;
+    box-shadow: #d8d8d8 5px 5px;
+    transition: all 100ms;
+}
+
+.icon:hover {
+    cursor: pointer;
+    background: #8b8a8a;
+}
+
+.icon:active {
+    transform: scale(0.8);
+}
+
+#prev,
+#next,
+#pause {
+    padding: 2px;
+}
+
+#icons {
+    display: none;
+    height: 60px;
+    width: 200px;
+    position: fixed;
+    margin: 480px 1050px;
+    transition: all 500ms;
+}

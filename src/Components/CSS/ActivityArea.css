@@ -1,0 +1,50 @@
+body {
+    background: #DFFFEA;
+}
+
+#ActivityArea {
+    margin-top: 70px;
+}
+
+.container {
+    position: absolute;
+    width: 930px;
+    margin: 220px 405px;
+    transition: all 500ms;
+    text-align: center;
+}
+
+.boxms {
+    width: 50px;
+    border-radius: 7px;
+    height: 45px;
+    border: 2px #000000 solid;
+    background: rgba(37, 143, 249, 0.83);
+    text-align: center;
+    line-height: 42px;
+    font-size: 25px;
+    margin: 8px;
+}
+
+.box {
+    width: 75px;
+    border-radius: 10px;
+    height: 65px;
+    border: 2px #000000 solid;
+    background: #1C8BF9;
+    text-align: center;
+    line-height: 65px;
+    font-size: 40px;
+    margin: 8px;
+}
+
+.elements {
+    top: 90px;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+#barrow {
+    padding: 10px 10px;
+}

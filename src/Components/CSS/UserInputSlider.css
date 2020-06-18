@@ -1,0 +1,36 @@
+#input_slider {
+    float: left;
+    height: 50px;
+    width: 50px;
+    background: #715757;
+}
+
+#input_slider:hover {
+    background: #2b2626;
+    cursor: pointer;
+}
+
+#custom_slider {
+    width: 232px;
+    position: fixed;
+    margin: 400px 1320px;
+    transition: all 500ms;
+}
+
+#custom_button {
+    box-sizing: border-box;
+    float: left;
+    height: 50px;
+    width: 180px;
+    background: #C1C1C1;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+    font-family: Bahnschrift, Arial, sans-serif;
+}
+
+#custom_button:hover {
+    background: rgb(170, 170, 170);
+    cursor: pointer;
+}

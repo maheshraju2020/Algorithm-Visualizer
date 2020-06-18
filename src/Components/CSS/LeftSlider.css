@@ -1,0 +1,38 @@
+.left_slider {
+    height: 100vh;
+    position: fixed;
+    width: 400px;
+    float: left;
+    transition: all 500ms;
+}
+
+.innerleft {
+    background: #D9D9D9;
+    height: 100%;
+    width: 350px;
+    float: left;
+    overflow: hidden;
+}
+
+.rightleft {
+    background: rgb(128, 124, 124);
+    height: 100%;
+    width: 50px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rightleft:hover {
+    background: rgb(68, 67, 67);
+}
+
+.slide-in {
+    transform: translateX(-350px);
+}
+
+#arrow {
+    margin-top: 220px;
+    width: 45px;
+    vertical-align: middle;
+}

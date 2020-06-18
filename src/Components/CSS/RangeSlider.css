@@ -1,0 +1,24 @@
+#ranger {
+    display: none;
+    position: fixed;
+    width: 500px;
+    align-self: center;
+    margin: 500px 500px;
+    background: linear-gradient(to right, #7D8EE5 0%, #7D8EE5 50%, #EFEFF1 50%, #EFEFF1 100%);
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 8px;
+    height: 20px;
+    outline: none;
+    -webkit-appearance: none;
+    transition: all 500ms;
+}
+
+#ranger::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 45px;
+    border-radius: 25%;
+    background: #4529D6;
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+#WorkArea {
+    zoom: 0.8;
+    position: absolute;
+    margin: 70px 750px;
+    width: 750px;
+    height: 550px;
+    transition: all 500ms;
+}
+
+
+.circle {
+    position: absolute;
+    width: 61px;
+    height: 60px;
+    border: 2px solid #212324;
+    border-radius: 50%;
+    background: #919bdf;
+    z-index: 1;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 60px;
+    font-size: 30px;
+    visibility: hidden;
+}

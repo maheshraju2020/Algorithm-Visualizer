@@ -1,0 +1,42 @@
+p {
+    color: black;
+    margin: 5px 10px;
+    background: #e9e8aa;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+    font-family: Consolas,
+        'Courier New',
+        monospace;
+}
+
+.gap {
+    height: 20px;
+}
+
+.cur {
+    background: rgba(102, 224, 255, 0.3);
+}
+
+.code {
+    background: #e9e8aa;
+    padding: 40px 0px;
+    border-top: 2.5px solid black;
+    border-bottom: 2.5px solid black;
+}
+
+.one {
+    padding-left: 20px;
+}
+
+.two {
+    padding-left: 40px;
+}
+
+.three {
+    padding-left: 60px;
+}
+
+.four {
+    padding-left: 80px;
+}
