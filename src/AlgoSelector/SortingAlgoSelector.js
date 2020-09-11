@@ -25,6 +25,7 @@ import {
 export function SortingAlgoSelector(props) {
 	const algoCode = CodeSelector(props.location.state);
 	const [data, changeData] = useState([5, 4, 8, 7, 9, 6]);
+	const [drawerState, flipDrawerState] = useState([0]);
 
 	let animStatus = 0;
 	let lineDoms = [];
@@ -64,6 +65,12 @@ export function SortingAlgoSelector(props) {
 		},
 	});
 
+	window.addEventListener("popstate", (e) => {
+		animStatus = 0;
+		timeline.progress(0);
+		timeline.pause();
+	});
+
 	const arr = [
 		refLeftSlider,
 		refPageHistory,
@@ -72,6 +79,7 @@ export function SortingAlgoSelector(props) {
 		refRangeSlider,
 		refMediaControlButtons,
 		refDrawerArrow,
+		false,
 	];
 
 	function HandleUserInput(userInput) {
@@ -97,6 +105,16 @@ export function SortingAlgoSelector(props) {
 			timeline.play();
 			animStatus = 1;
 		}
+	}
+
+	function drawerAction() {
+		timeline.pause();
+		timeline.progress(0);
+		refRangeSlider.current.style.display = "none";
+		refMediaControlButtons.current.style.display = "none";
+		refStartButton.current.style.display = "block";
+		refSpeedBox.current.style.display = "none";
+		flipDrawerState(slideDrawer(drawerState, arr));
 	}
 
 	function UserInpSlider() {
@@ -136,7 +154,13 @@ export function SortingAlgoSelector(props) {
 			<LeftSlider
 				leftSlider={refLeftSlider}
 				lineDoms={lineDoms}
-				slideDrawer={() => slideDrawer(currentDrawerState, arr)}
+				slideDrawer={() => {
+					if (props.location.state === "merge-sort") {
+						drawerAction();
+					} else {
+						currentDrawerState = slideDrawer(currentDrawerState, arr);
+					}
+				}}
 				drawerArrow={refDrawerArrow}
 				currentAlgo={algoCode}
 			/>

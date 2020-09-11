@@ -201,7 +201,6 @@ export default function merge_sort(tl, domObjects, lineDom, parDom, opData) {
 	lineDoms = lineDom;
 	opdata = opData.current;
 	tl.add(UpMover(parDom, -170));
-	console.log(parDom);
 	parDom.style.left = String(parDom.getBoundingClientRect().x) + "px";
 	parDom.style.top = "120px";
 	let kids = parDom.children;

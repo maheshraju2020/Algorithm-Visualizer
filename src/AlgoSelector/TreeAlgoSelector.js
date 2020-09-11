@@ -1,8 +1,8 @@
 import React, { createRef, useState, useEffect } from "react";
 
-import SpeedBox from "../Components//SpeedBox";
-import RangeSlider from "../Components//RangeSlider";
-import StartButton from "../Components//StartButton";
+import SpeedBox from "../Components/SpeedBox";
+import RangeSlider from "../Components/RangeSlider";
+import StartButton from "../Components/StartButton";
 import Popup from "../Components/Popup";
 import LeftSlider from "../Components/LeftSlider";
 import PageDetails from "../Components/PageDetails";
@@ -78,7 +78,7 @@ export function TreeAlgoSelector(props) {
 		refRangeSlider,
 		refMediaControlButtons,
 		refDrawerArrow,
-		false,
+		true,
 	];
 
 	function HandleUserInput(userInput) {
@@ -113,6 +113,12 @@ export function TreeAlgoSelector(props) {
 			refUserInpSliderArrow
 		);
 	}
+
+	window.addEventListener("popstate", (e) => {
+		animStatus = 0;
+		timeline.progress(0);
+		timeline.pause();
+	});
 
 	function changeTimelineProgress(e) {
 		playPauseChanger(false);
