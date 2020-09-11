@@ -7,11 +7,15 @@ import { About } from "./Pages/About";
 import SortingPage from "./Pages/SortingPage";
 import { SortingAlgoSelector } from "./AlgoSelector/SortingAlgoSelector";
 import { TreeAlgoSelector } from "./AlgoSelector/TreeAlgoSelector";
+import { Helmet } from "react-helmet";
 import TreePage from "./Pages/TreePage";
 
 function App() {
     return (
         <BrowserRouter>
+            <Helmet>
+                <title>Algorithm Visualizer</title>
+            </Helmet>
             <div className="App">
                 <NavbarComponent />
                 <Switch>
