@@ -1,0 +1,44 @@
+.texts {
+    position: fixed;
+    z-index: 10;
+}
+#madeby {
+    margin: 200px 570px;
+    font-size: 28px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 200;
+    text-decoration: underline;
+}
+
+#name {
+    font-size: 30px;
+    margin: 280px 530px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+#email {
+    font-size: 25px;
+    margin: 330px 485px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#about {
+    position: fixed;
+    margin: 100px 320px;
+}
+
+#UserLinks {
+    position: fixed;
+    margin: 380px 420px;
+}
+
+.item {
+    float: left;
+    font-size: 25px;
+    padding: 0 10px;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}

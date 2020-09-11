@@ -5,9 +5,8 @@ p {
     font-weight: bold;
     line-height: normal;
     font-size: 18px;
-    font-family: Consolas,
-        'Courier New',
-        monospace;
+    font-family: Consolas, "Courier New", monospace;
+    user-select: none;
 }
 
 .gap {

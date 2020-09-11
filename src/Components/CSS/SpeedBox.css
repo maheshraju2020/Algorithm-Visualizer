@@ -3,6 +3,7 @@
     position: fixed;
     margin: 5px 1260px;
     text-align: center;
+    z-index: 50;
 }
 
 #speedNum {
@@ -23,7 +24,13 @@
     position: fixed;
     align-self: center;
     margin: -35px -180px;
-    background: linear-gradient(to right, #e04949d0 0%, #e04949d0 42%, #EFEFF1 42%, #EFEFF1 100%);
+    background: linear-gradient(
+        to right,
+        #e04949d0 0%,
+        #e04949d0 42%,
+        #efeff1 42%,
+        #efeff1 100%
+    );
     border: solid 1px rgb(0, 0, 0);
     -webkit-appearance: none;
     border-radius: 8px;
